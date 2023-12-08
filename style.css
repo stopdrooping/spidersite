@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Spider-Man;
+    src: url("fonts/Spider-Man.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Russo One;
+    src: url("fonts/RussoOne-Regular.ttf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+html {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: Spider-Man;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+body {
+    background-color: #222222;
+}
+
+.site_container {
+    max-width: 1007px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    height: 693px;
+    background: url(img/header.png) center/cover no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+header h1 {
+    width: 50%;
+    background-color: black;
+    padding: 50px;
+}
+.main{
+    display: grid;
+    grid-template-rows: repeat(11, 300px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "morales morales gwen gwen"
+                         "parker parker gwen gwen"
+                         "parker parker pig ."
+                         "noir penny penny robot"
+                         "noir trio trio trio"
+                         "all-team all-team all-team all-team"
+                         "all-team all-team all-team all-team"
+                         ". versus versus versus"
+                         "kingpin kingpin kingpin freefall"
+                         "kingpin kingpin kingpin freefall"
+                         "kingpin kingpin kingpin .";
+    gap: 15px;
+    margin-top: 10px;
+}
+.main_morales {
+    background: url(img/morales.png) center/cover no-repeat;
+    grid-area: morales;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_gwen {
+    background: url('img/gwen.png') center/cover no-repeat;
+    grid-area: gwen;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main_parker {
+    background: url('img/parker.png') center/cover no-repeat;
+    grid-area: parker;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_pig {
+
+    background: url('img/spiderpig.png') center/cover no-repeat;
+    grid-area: pig;
+}
+
+.main_noir {
+
+    background: url('img/noir.png') center/cover no-repeat;
+    grid-area: noir;
+}
+
+.main_penny {
+
+    background: url('img/penni.png') center/cover no-repeat;
+    grid-area: penny;
+}
+
+.main_robot {
+    background: url('img/spiderbot.png') center/cover no-repeat;
+    grid-area: robot;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.main_trio {
+
+    background: url('img/trio.png') center/cover no-repeat;
+    grid-area: trio;
+}
+
+.main_all-team {
+
+    background: url('img/allteam.png') center/cover no-repeat;
+    grid-area: all-team;
+}
+
+.main_versus {
+
+    background: url('img/versus.png') center/cover no-repeat;
+    grid-area: versus;
+}
+
+.main_kingpin {
+
+    background: url('img/kingpin.png') center/cover no-repeat;
+    grid-area: kingpin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main_free-fall {
+
+    background: url('img/freefall.png') center/cover no-repeat;
+    grid-area: freefall;
+}
